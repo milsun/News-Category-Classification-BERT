@@ -2,6 +2,18 @@
 
 Identify the type of news based on headlines and short descriptions by fine tuning on pre-trained BERT uncased model.
 
+
+## About BERT
+
+BERT, which stands for Bidirectional Encoder Representations from Transformers, is a neural network-based technique for natural language processing pre-training. In plain English, it can be used to help Google better discern the context of words in search queries.
+
+<p align="center">
+<img width="600" src="https://github.com/milsun/News-Category-Classification-BERT/blob/master/images/bert.png">
+</p>
+
+
+For example, in the phrases “nine to five” and “a quarter to five,” the word “to” has two different meanings, which may be obvious to humans but less so to search engines. BERT is designed to distinguish between such nuances to facilitate more relevant results.
+
 ## Dataset
 
 The dataset contains 200k records. Each json record contains following attributes:
@@ -17,27 +29,8 @@ The dataset contains 200k records. Each json record contains following attribute
 <img width="600" src="https://github.com/milsun/News-Category-Classification-BERT/blob/master/images/input.png">
 </p>
 
-## About BERT
 
-BERT, which stands for Bidirectional Encoder Representations from Transformers, is a neural network-based technique for natural language processing pre-training. In plain English, it can be used to help Google better discern the context of words in search queries.
-
-<p align="center">
-<img width="600" src="https://github.com/milsun/News-Category-Classification-BERT/blob/master/images/bert.png">
-</p>
-
-
-For example, in the phrases “nine to five” and “a quarter to five,” the word “to” has two different meanings, which may be obvious to humans but less so to search engines. BERT is designed to distinguish between such nuances to facilitate more relevant results.
-
-
-## Usage
-
-#### Download news category dataset from Kaggle
-News Category Dataset contains around 200k news headlines/short descriptions from the year 2012 to 2018 obatined from HuffPost. Download this dataset from [Kaggle](https://www.kaggle.com/rmisra/news-category-dataset), unzip into the `corpus` directory.
-
-
-
-
-### Results
+## Results
 Fine tuned model was able to achieve 82% accuracy.
 Below are some out of sample predictions:
 ```
